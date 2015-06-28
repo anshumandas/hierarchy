@@ -1,0 +1,19 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<header class="hero-unit" id="banner">
+  <div class="container">
+    <h1>'Allo, 'Allo!</h1>
+    <p class="lead">Get your Hierarchy based select menu form here</p>
+    <img src="assets/images/yeoman.png" alt="I'm Yeoman">
+  </div>
+</header>
+
+<div class="container" ng-init="init()">
+  <hierarchy things="things" items="items" on-select="onSelect(thing, item)" selected="selected"/>
+</div>
+
+<footer class="footer">
+  <div class="container">
+      <p> Powered by <a href="https://github.com/DaftMonk/generator-angular-fullstack">Angular Fullstack v2.0.13</a></p>
+  </div>
+</footer>
